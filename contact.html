@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*contact section*/
+#contact{
+    
+    position: relative;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 72px;
+    padding-top: 40px;
+
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 1;
+    background: url('bg.jpg') no-repeat center center/cover;
+}
+#contact-box form{
+    width: 40%;
+
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    
+}
+#login {
+    color: white;
+    text-align:right;
+    font-family: 'Bree_serif.zip';
+}
+.btn{
+    padding: 15px 20px;
+    padding-left: 10px;
+    
+    border: 2px solid white;
+    background-color: rgb(247, 73, 73);
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#contact-box input type{
+    cursor: pointer;
+}
+.social ul{
+    list-style-type: none;
+}
+.social ul li{
+    display: inline;
+    padding: 1%;
+}
+.text-center{
+    text-align: center;
+}
+.logo{
+    width: 10%;
+    float: left;}
+
+.menu ul{
+    list-style-type: none;
+}
+
+.menu ul li{
+    display: inline;
+    padding: 1%;
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body >
+   
+    <section id="contact">
+        
+               
+                
+               
+           
+        <h1  class="h-primary center" style="color: rgb(0, 0, 0); text-align: center; background-color: aqua ;"><b>Contact Us</b></h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" required name="Name" id="Name"
+                    placeholder="Enter Your Full Name">
+                </div>
+                <div class="form-group">
+                    <label for="name">Email</label>
+                    <input type="text" required name="E-mail" id="email"
+                    placeholder="Enter Your E-mail">
+                </div>
+                <div class="form-group">
+                    <label for="name">Phone</label>
+                    <input type="Phone" required name="Name" id="phone"
+                    placeholder="Enter Your Phone">
+                </div>
+                <div class="form-group">
+                    <label for="name">Message</label>
+                    <textarea name="Message" id="Message"cols="30" rows="10" placeholder="eg.feedback"> </textarea>
+                    <button class="btn" onclick="alert('feedback send succesfully')">Submit</button>
+                    <a href="home.html">Home</a>
+                </div>
+            </form>
+        </div>
+    </section> 
+    <section class="social">
+        <div class="container text-center">
+            <ul>
+                <li>
+                    <a href="#"><img src="https://img.icons8.com/fluent/50/000000/facebook-new.png"/></a>
+                </li>
+                <li>
+                    <a href="#"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/></a>
+                </li>
+                <li>
+                    <a href="#"><img src="https://img.icons8.com/fluent/48/000000/twitter.png"/></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container text-center">
+            <p>Contact :- <a href="momskitchen@gmail.com">momskitchen@gmail.com</a></p>
+            <p>All rights reserved. Designed By <a href="home.html">Mom's Kitchen</a></p>
+        </div>
+    </section>
+</body>
+</html>

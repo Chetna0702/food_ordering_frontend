@@ -1,0 +1,191 @@
+/*CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* overflow-y: hidden; */
+    scroll-behavior: smooth;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+/*CSS Variables*/
+:root{
+    --navbar-height:59px;
+
+}
+/* Navigation Bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+
+}
+/*Logo and Image*/
+#logo{
+    margin: 10px 34px;
+    height: 80px;
+    width:100px ;
+
+
+
+
+}
+
+#logo img{
+    height: 76px;
+    width:120px ;
+    border-radius: 0cm;
+    visibility: inherit;;
+    margin: 3px 5px;
+
+    
+
+}
+/*list styling*/
+
+
+
+
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    
+
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+#navbar ul li a{
+    color:white;
+    
+    
+
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+
+   
+}
+
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+    
+
+   
+}
+/*Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: auto; 
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home::before{
+    content: "";
+    background: url('./bj3.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+    
+    
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree_serif.zip';
+
+
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree_serif.zip, serif';
+
+}
+
+/*utility class*/
+
+.h-primary{
+    font-size: 3.8rem;
+    
+    padding: 12px;
+
+}
+.bt{
+    padding: 6px 10px;
+    border: 2px solid white;
+    background-color: brown;
+    color: rgb(239, 247, 249);
+    margin: 120px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.bt:hover{ 
+    background-color: rgb(190, 65, 65); 
+}
+/*services section*/
+.center{
+    text-align: center;
+
+}
+.h-secondary{
+    font-size: 2.3rem;
+     
+}
+
+
+
+footer{
+    background: black;
+    color: #63abcf;
+    padding: 9px 10px;
+
+}
+food-search{
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7% 0;
+}
+
+.food-search input[type="search"]{
+    width: 50%;
+    padding: 1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}

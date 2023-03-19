@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: #ecff59;
+    cursor: pointer;
+}
+#services .box img{
+    height: 167px;
+    margin: auto;
+    display: block;
+
+}
+#services .box p{
+    font-size: 1.3rem;
+
+}
+
+#services::before{
+    content: "";
+    position: absolute;
+    width: 1600px;
+    height: 700px;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('bg.jpg') no-repeat center center/cover;
+    
+}
+#services .h1{
+    background-color: rgb(92, 37, 37);
+}
+
+    </style>
+</head>
+<body>
+    
+    <section id="services-container">
+        <h1 class="h-primary center" >
+            Our Services
+        </h1>
+        <div id="services">
+            <div class="box">
+                <img src="food.jpg" alt="">
+                <h2 class="h-secondary center">Food Catering</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nam id assumenda consequuntur, voluptate, explicabo cum corporis rerum tempora modi dolore perspiciatis blanditiis tenetur aliquam.</p>
+            </div>
+            <div class="box">
+                <img src="food_ordering.jpg" alt="">
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p>Lorem ipsum dolor sit amet . Consectetur, repellat dolores tenetur  Quae, nam id assumenda consequuntur, voluptate, explicabo cum corporis rerum tempora modi dolore perspiciatis blanditiis tenetur aliquam.</p>
+            </div>
+            <div class="box">
+                <img src="dish.jpg" alt="">
+                <h2 class="h-secondary center">Bulk Ordering</h2>
+                <p>Lorem ipsum dolor sit amet  ipsum dolor sit amet consectetur adipisicing agni? explicabo cum corporis rerum tempora modi dolore perspiciatis blanditiis tenetur aliquam.</p>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
